@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/tv_cart_item_name"
+        android:layout_margin="10sp"
+        android:textSize="16sp"
+        android:textColor="#454545"
+        android:text="商品名：阿迪达斯男子休闲长裤 2016新款上市"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="10sp"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_cart_item_sales"
+            android:text="包邮"
+            android:textSize="8sp"
+            android:paddingBottom="2sp"
+            android:paddingTop="2sp"
+            android:paddingLeft="5sp"
+            android:paddingRight="5sp"
+            android:textColor="#ffffff"
+            android:background="@drawable/my_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginLeft="20sp"
+                android:text="¥"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_cart_item_price"
+                android:layout_marginLeft="3sp"
+                android:textSize="15sp"
+                android:text="123"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:text="数量："
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ll_cart_item_am"
+                android:background="#d7d7d7"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tv_cart_item_move"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/move"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:id="@+id/tv_cart_item_buynum"
+                android:background="#ffffff"
+                android:layout_gravity="center_vertical"
+                android:text="2"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_cart_item_add"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/add"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+        </LinearLayout>
+</LinearLayout>
+        <LinearLayout
+            android:layout_marginRight="10sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="5sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff40"
+            android:textSize="15sp"
+            android:text="总价：¥ "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_cart_item_sumprice"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff40"
+            android:textSize="18sp"
+            android:text="111"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         >
+    </FrameLayout>
+
+    <LinearLayout
+        android:background="@drawable/main_menu_bottm"
+        android:paddingTop="5sp"
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="46sp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_main_home"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/bt_main_home"
+                android:background="@drawable/home_fill"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/tv_main_home_text"
+                android:text="主页"
+                android:textColor="#2c2c2c"
+                android:textSize="8sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_main_repair"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/bt_main_repair"
+                android:background="@drawable/repair"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/tv_main_repair_text"
+                android:text="工具"
+                android:textColor="#2c2c2c"
+                android:textSize="8sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_main_cart"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/bt_main_cart"
+                android:background="@drawable/cart"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/tv_main_cart_text"
+                android:text="购物车"
+                android:textColor="#2c2c2c"
+                android:textSize="8sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_main_my"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/bt_main_my"
+                android:background="@drawable/my"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:clickable="false"
+                android:focusable="false"
+                android:id="@+id/tv_main_my_text"
+                android:text="我"
+                android:textColor="#2c2c2c"
+                android:textSize="8sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

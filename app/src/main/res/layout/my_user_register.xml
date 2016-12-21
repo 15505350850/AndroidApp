@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#36e7e7e7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:background="#f7633a"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <Button
+            android:layout_marginLeft="10sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:layout_width="30sp"
+            android:layout_height="30sp" />
+        <TextView
+            android:id="@+id/tv_my_user_register_back"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="用户注册"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:paddingLeft="10sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <TextView
+            android:text="用户名"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="70sp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_my_user_register_username"
+            android:hint="请输入用户名(用户名唯一且不可修改)"
+            android:paddingLeft="20sp"
+            android:textSize="14sp"
+            android:textColorHint="#9f9f9f"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:paddingLeft="10sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <TextView
+            android:text="密码"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="70sp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_my_user_register_psw1"
+            android:hint="密码至少为6位"
+            android:paddingLeft="20sp"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:textColorHint="#9f9f9f"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:paddingLeft="10sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <TextView
+            android:text="再次输入"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="70sp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_my_user_register_psw2"
+            android:hint="请再次输入密码"
+            android:paddingLeft="20sp"
+            android:textSize="14sp"
+            android:inputType="textPassword"
+            android:textColorHint="#9f9f9f"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:paddingLeft="10sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <TextView
+            android:text="邮箱"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="70sp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_my_user_register_email"
+            android:hint="请输入您的常用邮箱"
+            android:paddingLeft="20sp"
+            android:textSize="14sp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#9f9f9f"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:paddingLeft="10sp"
+        android:gravity="center_vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <TextView
+            android:text="电话"
+            android:gravity="center_vertical|center_horizontal"
+            android:layout_width="70sp"
+            android:layout_height="match_parent" />
+        <EditText
+            android:id="@+id/et_my_user_register_tel"
+            android:hint="请输入您的 手机号/电话号(加区号)"
+            android:paddingLeft="20sp"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:textColorHint="#9f9f9f"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+<Button
+    android:id="@+id/bt_my_user_register"
+    android:layout_marginRight="10sp"
+    android:layout_marginLeft="10sp"
+    android:layout_marginTop="50sp"
+    android:text="注  册"
+    android:textSize="15sp"
+    android:textColor="#ffffff"
+    android:background="@drawable/my_login_button"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+</LinearLayout>

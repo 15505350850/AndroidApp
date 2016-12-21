@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="#f7633a"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+        <Button
+            android:id="@+id/bt_home_admin_login_back"
+            android:layout_marginLeft="10sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/back"
+            android:layout_width="30sp"
+            android:layout_height="30sp" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="管理员登录"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="#ffffff"
+            />
+
+    </RelativeLayout>
+    <EditText
+        android:inputType="number"
+        android:id="@+id/et_home_admin_name"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="管理员账号  默认123"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/my_login_border"
+        />
+    <EditText
+        android:inputType="number"
+        android:id="@+id/et_home_admin_psw"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:paddingLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:hint="管理员密码  默认123"
+        android:background="@drawable/my_login_border"
+        android:password="true"
+        />
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="登     录"
+        android:textSize="20sp"
+        android:id="@+id/bt_home_admin_login"
+        android:background="@drawable/my_login_button"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请使用默认账号登录"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:textColor="#ff4200"
+        />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="一键导入默认商品信息"
+        android:textSize="16sp"
+        android:id="@+id/bt_home_admin_input_goods"
+        android:background="@drawable/my_login_button"
+        android:textColor="#fff"/>
+    <TextView
+        android:textSize="16sp"
+        android:textColor="#ff4200"
+        android:gravity="center"
+        android:layout_margin="10sp"
+        android:text="默认导入30件商品信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

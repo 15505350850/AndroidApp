@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#ff40"
+        android:layout_width="match_parent"
+        android:layout_height="50sp">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10sp"
+            android:background="@drawable/back"
+            android:layout_width="30sp"
+            android:layout_height="30sp" />
+
+        <RelativeLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/rl_home_search_goods"
+            android:layout_marginLeft="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="50sp">
+
+            <TextView
+                android:focusable="false"
+                android:clickable="false"
+                android:layout_marginLeft="5sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/search"
+                android:layout_width="20sp"
+                android:layout_height="20sp" />
+            <EditText
+                android:id="@+id/et_goods_list_search"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:layout_marginRight="60sp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/home_search_bottm"
+                android:paddingLeft="40sp"
+                android:hint="搜 索 宝 贝"
+                android:textSize="15sp"
+                android:textColorHint="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="30sp" />
+            <TextView
+                android:id="@+id/tv_goods_list_gosearch"
+                android:layout_marginRight="10sp"
+                android:textSize="16sp"
+                android:textColor="#ffffff"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:text="搜索"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="10sp"
+        android:paddingBottom="10sp"
+        android:background="@drawable/my_login_border"
+        android:layout_margin="10sp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:entries="@array/jiage"
+            android:id="@+id/jiagepaixu"/>
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:entries="@array/xiaoliang"
+            android:id="@+id/xiaoliang"/>
+        <Spinner
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:entries="@array/pingjia"
+            android:id="@+id/pingjia"/>
+    </LinearLayout>
+<TextView
+    android:id="@+id/tv_goods_list_txt"
+    android:gravity="center"
+    android:textSize="13sp"
+    android:layout_marginBottom="5sp"
+    android:text="为您找到12件相关商品~~"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_marginBottom="10sp"
+        android:background="#c9c9c9"
+        android:layout_width="match_parent"
+        android:layout_height="1sp">
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_goods_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+</LinearLayout>

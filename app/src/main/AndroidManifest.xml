@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.shoppingapp">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WelcomeActivity"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".My.MyAllOrder"/>
+        <activity android:name=".My.MySetting"/>
+        <activity android:name=".My.MyUserLogin"/>
+        <activity android:name=".My.MyUserRegister"/>
+        <activity android:name=".Repair.RepairKuaidi"/>
+        <activity android:name=".Repair.RepairTianqi"/>
+        <activity android:name=".Home.HomeSearchGoods"/>
+        <activity android:name=".Home.HomeAdminLogin"/>
+        <activity android:name=".Home.HomeAddGoods"/>
+        <activity android:name=".Home.HomeGoodsList"/>
+        <activity android:name=".Home.HomeGoodsDetail"/>
+        <activity android:name=".Home.HomeHistoryActivity"/>
+        <activity android:name=".WelcomeFirstActivity"/>
+
+    </application>
+
+</manifest>

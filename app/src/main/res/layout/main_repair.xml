@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:paddingTop="180sp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:orientation="horizontal"
+        android:paddingBottom="10sp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_repair_kuaidi"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@drawable/repair_kuaidi"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:clickable="false"
+                android:focusable="false"
+                android:text="快递查询"
+                android:textColor="#2c2c2c"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_repair_tianqi"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:clickable="false"
+                android:focusable="false"
+                android:background="@drawable/repair_tianqi"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:clickable="false"
+                android:focusable="false"
+                android:text="天气查询"
+                android:textColor="#2c2c2c"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_repair_gupiao"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/repair_gupiao"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:text="股票"
+                android:textColor="#2c2c2c"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:background="@drawable/main_menu_bottm"
+        android:paddingTop="5sp"
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:orientation="horizontal"
+        android:paddingBottom="10sp"
+        >
+
+        <RelativeLayout
+            android:id="@+id/rl_repair_xiaohua"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/repair_xiaohua"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:text="开心一刻"
+                android:textColor="#2c2c2c"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_repair_wifi"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/repair_wifi"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:text="城市WIFI"
+                android:textColor="#2c2c2c"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_repair_huilv"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/repair_huilv"
+                android:layout_centerHorizontal="true"
+                android:layout_width="50sp"
+                android:layout_height="50sp" />
+            <TextView
+                android:text="汇率换算"
+                android:textColor="#2c2c2c"
+                android:textSize="14sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

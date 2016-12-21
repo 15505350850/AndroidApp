@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent" >
+    <RelativeLayout
+        android:background="#ff4200"
+        android:layout_width="match_parent"
+        android:layout_height="40sp">
+<LinearLayout
+    android:id="@+id/ll_my_setting"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:layout_centerVertical="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginLeft="10sp"
+        android:layout_width="20sp"
+        android:layout_height="20sp"
+        android:background="@drawable/settings"/>
+        <TextView
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:layout_marginLeft="3sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#ff4200"
+        android:layout_width="match_parent"
+        android:layout_height="130sp">
+        <RelativeLayout
+            android:layout_marginTop="20sp"
+            android:layout_centerHorizontal="true"
+            android:layout_width="50sp"
+            android:layout_height="50sp">
+        <ImageButton
+            android:id="@+id/ib_user_head"
+            android:background="@drawable/touxiang"
+            android:layout_width="50sp"
+            android:layout_height="50sp" />
+            <TextView
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/vip"
+                android:layout_width="20sp"
+                android:layout_height="20sp" />
+
+    </RelativeLayout>
+        <TextView
+            android:id="@+id/tv_username"
+            android:visibility="invisible"
+            android:textSize="20sp"
+            android:layout_marginBottom="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="username"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_user_login"
+            android:textSize="20sp"
+            android:layout_marginBottom="30sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="点击登录"
+            android:textColor="#ffffff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
+            android:textColor="#000000"
+            android:text="我的订单"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_my_all_order"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:text="查看全部订单 >"
+            android:textColor="#a1a1a1"
+            android:textSize="10sp"
+            android:layout_marginRight="5sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@drawable/main_menu_bottm"
+        android:paddingTop="8sp"
+        android:id="@+id/tab_menu"
+        android:layout_width="match_parent"
+        android:layout_height="68sp"
+        android:orientation="horizontal"
+        android:paddingBottom="8sp"
+        android:layout_alignParentBottom="true">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_my_pay"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/pay"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:text="待付款"
+                android:textColor="#2c2c2c"
+                android:textSize="10sp"
+                android:layout_marginTop="4sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_my_send"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/send"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:text="待发货"
+                android:textColor="#2c2c2c"
+                android:textSize="10sp"
+                android:layout_marginTop="4sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_my_deliver"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/deliver"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:text="待收货"
+                android:textColor="#2c2c2c"
+                android:textSize="10sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_my_evaluate"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/evaluate"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:text="待评价"
+                android:textColor="#2c2c2c"
+                android:textSize="10sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_my_refung"
+            android:gravity="center"
+            android:paddingBottom="2sp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <Button
+                android:background="@drawable/refund"
+                android:layout_centerHorizontal="true"
+                android:layout_width="25sp"
+                android:layout_height="25sp" />
+            <TextView
+                android:text="退款/售后"
+                android:textColor="#2c2c2c"
+                android:textSize="10sp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
